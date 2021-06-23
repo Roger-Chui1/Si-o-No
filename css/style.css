@@ -1,0 +1,87 @@
+body {
+    background-image: url("https://images4.alphacoders.com/809/809423.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:768px) {
+    body {
+        background-image: url("../Img/You.jpg");
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+h1 {
+    color: black;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    background-color: white;
+    opacity: 0.6;
+    width: 100%;
+    border-radius: 1.4rem;
+}
+
+@media (max-width:768px) {
+    h1 {
+        font-family: 'Pacifico', cursive;
+        font-size: 30px;
+        color: black;
+    }
+}
+
+@media (min-width:768px) {
+    .contenedor {
+        text-align: center;
+    }
+}
+
+.contenedor {
+    text-align: center;
+    margin: 60px;
+}
+
+@media(min-width: 768px) {
+    img {
+        width: 10rem;
+        height: 2rem;
+        position: relative;
+    }
+}
+
+img {
+    width: 28rem;
+    height: 7rem;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+}
+
+button {
+    font-family: 'Pacifico', cursive;
+    padding: 10px;
+    font-size: 1.7rem;
+    opacity: 0.6;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.si {
+    margin-bottom: 10rem;
+}
+
+.no {
+    margin-top: 100px;
+}

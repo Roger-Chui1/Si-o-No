@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Un juego</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Roger Chui">
+    <meta name="description" content="Enviaselo a tu crush">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>¿Quieres ser mi novia?</h1>
+        <div class="botones">
+            <button class="si">Si</button>
+            <button id=" button " class="no">No</button>
+        </div>
+    </div>
+
+    <script>
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+        $(document).ready(function() {
+            $(".no").hover(function() {
+                var v = getRandomInt(1, $(window).height() - 100);
+                var h = getRandomInt(1, $(window).width() - 100);
+                $(this).css({
+                    top: v + "px",
+                    left: h + "px"
+                });
+            });
+
+            $(".si").click(function() {
+                swal("Sabia que dirias que si 😉❤️");
+            });
+        });
+    </script>
+</body>
+
+</html>
