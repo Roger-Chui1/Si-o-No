@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -42,9 +43,11 @@
                 Swal.fire({
                     text:'Sabia que dirias que si 😉❤️',
                     imageUrl: 'https://d.wattpad.com/story_parts/660145289/images/156b62404ee53ade887039047831.png',
-                    imageWidth: 125,
+                    imageWidth: 140,
                     imageHeight: 200,
                     imageAlt: 'corazon',
+                    showConfirmButton: false,
+                    timer: 1500
                 })
             });
         });
